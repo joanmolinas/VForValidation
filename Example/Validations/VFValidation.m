@@ -65,11 +65,11 @@
     _validatedBlock(self.key, _validationBlock());
 }
 
--(void)checkValidationWithCompletion:(ValidatedWithouKey)validated {
+-(void)checkValidationWithCompletion:(ValidatedWithoutKey)validated {
     validated(_validationBlock());
 }
 
--(void)validateAndCheckWithCompletion:(ValidatedWithouKey)validated {
+-(void)validateAndCheckWithCompletion:(ValidatedWithoutKey)validated {
     [self validate];
     [self checkValidationWithCompletion:validated];
 }

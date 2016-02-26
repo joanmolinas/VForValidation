@@ -68,7 +68,7 @@
     
 }
 
--(void)checkIfAllWasValidWithCompletionBlock:(ValidatedWithouKey)validated {
+-(void)checkIfAllWasValidWithCompletion:(ValidatedWithoutKey)validated {
     __block BOOL allWasValid = true;
     int i = 0;
     NSArray *keys = [[_validations keyEnumerator] allObjects];
@@ -84,9 +84,9 @@
     validated(allWasValid);
 }
 
--(void)validateAndCheckIfAllWasValidWithCompletionBlock:(ValidatedWithouKey)validated {
+-(void)validateAndCheckIfAllWasValidWithCompletion:(ValidatedWithoutKey)validated {
     [self validate];
-    [self checkIfAllWasValidWithCompletionBlock:validated];
+    [self checkIfAllWasValidWithCompletion:validated];
 }
 
 #pragma mark - Getters

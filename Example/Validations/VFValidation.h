@@ -14,7 +14,7 @@
 
 typedef BOOL(^ValidationBlock)(void);
 typedef void(^ValidatedBlock)(NSString *key, BOOL validated);
-typedef void(^ValidatedWithouKey)(BOOL validated);
+typedef void(^ValidatedWithoutKey)(BOOL validated);
 
 /*
  
@@ -99,14 +99,14 @@ typedef void(^ValidatedWithouKey)(BOOL validated);
  @param validated: Return if validationBlock was true.
  */
 
--(void)checkValidationWithCompletion:(ValidatedWithouKey)validated;
+-(void)checkValidationWithCompletion:(ValidatedWithoutKey)validated;
 
 /**
  Check and validate if validationBlock was true.
  
  @param validated: Return if validationBlock was true.
  */
--(void)validateAndCheckWithCompletion:(ValidatedWithouKey)validated;
+-(void)validateAndCheckWithCompletion:(ValidatedWithoutKey)validated;
 
 
 @end

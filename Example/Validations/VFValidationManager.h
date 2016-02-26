@@ -106,7 +106,7 @@
  
  */
 
--(void)checkIfAllWasValidWithCompletionBlock:(ValidatedWithouKey)validated;
+-(void)checkIfAllWasValidWithCompletion:(ValidatedWithoutKey)validated;
 
 /**
   - Check and validate if all validation was valid. Manager iterates all the
@@ -119,6 +119,6 @@
  @param validated: return if all validations was true.
  
  */
--(void)validateAndCheckIfAllWasValidWithCompletionBlock:(ValidatedWithouKey)validated;
+-(void)validateAndCheckIfAllWasValidWithCompletion:(ValidatedWithoutKey)validated;
 
 @end

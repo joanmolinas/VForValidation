@@ -46,7 +46,7 @@
 }
 
 - (IBAction)Validate:(UIButton *)sender {
-    [self.v validateAndCheckIfAllWasValidWithCompletionBlock:^(BOOL validated) {
+    [self.v validateAndCheckIfAllWasValidWithCompletion:^(BOOL validated) {
         if (validated) {
             sender.backgroundColor = [UIColor greenColor];
         } else {
@@ -104,6 +104,7 @@
                                                             key:[NSString
                                                                  stringWithFormat:@"%ld",
                                                                  (long)indexPath.row]];
+    
     return v;
 }
 @end
