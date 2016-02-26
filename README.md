@@ -111,6 +111,10 @@ Drag and drop or copy Source Folder into your project.
     -(void)validateAndCheckWithCompletion:(ValidatedWithouKey)validated;
   ```
 
+## TO-DO:
+    - Execute validation blocs in a thread.
+    - Refactor names.
+
 ## Contributing
 
 1. Fork it!
