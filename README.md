@@ -124,7 +124,7 @@ Drag and drop or copy Source Folder into your project.
 5. Submit a pull request 👌
 
 ## Credits
- - Joan Molinas ([website](www.joanmolinas.com))
+ - Joan Molinas ([website](http://www.joanmolinas.com))
 
 ## License
 
