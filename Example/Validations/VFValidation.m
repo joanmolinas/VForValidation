@@ -19,14 +19,14 @@
 @implementation VFValidation
 
 #pragma mark - Inits
--(instancetype)initWithValidationBlock:(ValidationBlock)validation validatedBlock:(ValidatedBlock)validated {
+- (instancetype)initWithValidationBlock:(ValidationBlock)validation validatedBlock:(ValidatedBlock)validated {
     self = [self initWithValidationBlock:validation
                           validatedBlock:validated
                                      key:nil];
     return self;
 }
 
--(instancetype)initWithValidationBlock:(ValidationBlock)validation
+- (instancetype)initWithValidationBlock:(ValidationBlock)validation
                         validatedBlock:(ValidatedBlock)validated
                                    key:(NSString *)key {
     if (self = [super init]) {
@@ -39,38 +39,38 @@
 }
 
 #pragma mark - Setters
--(void)setValidationBlock:(ValidationBlock)validationBlock {
+- (void)setValidationBlock:(ValidationBlock)validationBlock {
     if (!validationBlock) { return; }
     _validationBlock = [validationBlock copy];
 }
 
--(void)setValidatedBlock:(ValidatedBlock)validatedBlock {
+- (void)setValidatedBlock:(ValidatedBlock)validatedBlock {
     if (!validatedBlock) { return; }
     _validatedBlock = [validatedBlock copy];
 }
 
--(void)setKey:(NSString *)key {
+- (void)setKey:(NSString *)key {
     if (!key) { return; }
     _key = key;
 }
 
--(void)setValidationBlock:(ValidationBlock)validationBlock
+- (void)setValidationBlock:(ValidationBlock)validationBlock
            validatedBlock:(ValidatedBlock)validatedBlock {
     [self setValidatedBlock:validatedBlock];
     [self setValidationBlock:validationBlock];
 }
 
 #pragma mark - Public API
--(void)validate {
+- (void)validate {
     __unsafe_unretained typeof(self) weakSelf = self;
     _validatedBlock(weakSelf.key, _validationBlock());
 }
 
--(void)checkValidationWithCompletion:(ValidatedWithoutKey)validated {
+- (void)checkValidationWithCompletion:(ValidatedWithoutKey)validated {
     validated(_validationBlock());
 }
 
--(void)validateAndCheckWithCompletion:(ValidatedWithoutKey)validated {
+- (void)validateAndCheckWithCompletion:(ValidatedWithoutKey)validated {
     [self validate];
     [self checkValidationWithCompletion:validated];
 }

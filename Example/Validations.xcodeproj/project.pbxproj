@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E574F1B1CAB0B3E00502701 /* VFRegularExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E574F1A1CAB0B3E00502701 /* VFRegularExpression.m */; };
 		4E581C2F1C80BFAC00B753A9 /* VFValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E581C2C1C80BFAC00B753A9 /* VFValidation.m */; };
 		4E581C301C80BFAC00B753A9 /* VFValidationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E581C2E1C80BFAC00B753A9 /* VFValidationManager.m */; };
 		4E70D4CE1C7DB78800991424 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E70D4CD1C7DB78800991424 /* main.m */; };
@@ -19,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E574F191CAB0B3E00502701 /* VFRegularExpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VFRegularExpression.h; sourceTree = "<group>"; };
+		4E574F1A1CAB0B3E00502701 /* VFRegularExpression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VFRegularExpression.m; sourceTree = "<group>"; };
 		4E581C2B1C80BFAC00B753A9 /* VFValidation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VFValidation.h; sourceTree = "<group>"; };
 		4E581C2C1C80BFAC00B753A9 /* VFValidation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VFValidation.m; sourceTree = "<group>"; };
 		4E581C2D1C80BFAC00B753A9 /* VFValidationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VFValidationManager.h; sourceTree = "<group>"; };
@@ -97,6 +100,8 @@
 				4E581C2C1C80BFAC00B753A9 /* VFValidation.m */,
 				4E581C2D1C80BFAC00B753A9 /* VFValidationManager.h */,
 				4E581C2E1C80BFAC00B753A9 /* VFValidationManager.m */,
+				4E574F191CAB0B3E00502701 /* VFRegularExpression.h */,
+				4E574F1A1CAB0B3E00502701 /* VFRegularExpression.m */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -186,6 +191,7 @@
 				4E70D4F01C7DDD8000991424 /* ExampleTableViewCell.m in Sources */,
 				4E581C301C80BFAC00B753A9 /* VFValidationManager.m in Sources */,
 				4E70D4D11C7DB78800991424 /* AppDelegate.m in Sources */,
+				4E574F1B1CAB0B3E00502701 /* VFRegularExpression.m in Sources */,
 				4E581C2F1C80BFAC00B753A9 /* VFValidation.m in Sources */,
 				4E70D4EC1C7DDC8A00991424 /* ExampleTableViewController.m in Sources */,
 				4E70D4CE1C7DB78800991424 /* main.m in Sources */,

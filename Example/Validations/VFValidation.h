@@ -40,7 +40,7 @@ typedef void(^ValidatedWithoutKey)(BOOL validated);
  @param validated: return key and if validation was valid.
  */
 
--(instancetype)initWithValidationBlock:(ValidationBlock)validation
+- (instancetype)initWithValidationBlock:(ValidationBlock)validation
                         validatedBlock:(ValidatedBlock)validated;
 
 /**
@@ -51,16 +51,21 @@ typedef void(^ValidatedWithoutKey)(BOOL validated);
  @param key: key for store in Manager's dictionary.
  */
 
--(instancetype)initWithValidationBlock:(ValidationBlock)validation
+- (instancetype)initWithValidationBlock:(ValidationBlock)validation
                         validatedBlock:(ValidatedBlock)validated
                                    key:(NSString *)key;
+
+//- (instancetype)initWithRegularExpression:(NSString *)expression 
+//                           validatedBlock:(ValidatedBlock)validated
+//                                      key:(NSString *)key;
+
 /**
  Set validationBlock to a private property.
  
  @param validation: block for validation
  */
 
--(void)setValidationBlock:(ValidationBlock)validationBlock;
+- (void)setValidationBlock:(ValidationBlock)validationBlock;
 
 /**
  Set validatedBlock to a private property.
@@ -68,7 +73,7 @@ typedef void(^ValidatedWithoutKey)(BOOL validated);
  @param validated: block for validated
  */
 
--(void)setValidatedBlock:(ValidatedBlock)validatedBlock;
+- (void)setValidatedBlock:(ValidatedBlock)validatedBlock;
 
 /**
  Set validationBlock and validatedBlock to private properties.
@@ -76,7 +81,7 @@ typedef void(^ValidatedWithoutKey)(BOOL validated);
  @param validation: block for validation
  */
 
--(void)setValidationBlock:(ValidationBlock)validationBlock
+- (void)setValidationBlock:(ValidationBlock)validationBlock
            validatedBlock:(ValidatedBlock)validatedBlock;
 
 /**
@@ -85,13 +90,13 @@ typedef void(^ValidatedWithoutKey)(BOOL validated);
  @param key.
  */
 
--(void)setKey:(NSString *)key;
+- (void)setKey:(NSString *)key;
 
 /**
  Validate and call validationBlock and validatedBlock,
  */
 
--(void)validate;
+- (void)validate;
 
 /**
  Check if validationBlock was true.
@@ -99,14 +104,14 @@ typedef void(^ValidatedWithoutKey)(BOOL validated);
  @param validated: Return if validationBlock was true.
  */
 
--(void)checkValidationWithCompletion:(ValidatedWithoutKey)validated;
+- (void)checkValidationWithCompletion:(ValidatedWithoutKey)validated;
 
 /**
  Check and validate if validationBlock was true.
  
  @param validated: Return if validationBlock was true.
  */
--(void)validateAndCheckWithCompletion:(ValidatedWithoutKey)validated;
+- (void)validateAndCheckWithCompletion:(ValidatedWithoutKey)validated;
 
 
 @end

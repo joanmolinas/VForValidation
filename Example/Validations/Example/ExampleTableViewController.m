@@ -9,6 +9,7 @@
 #import "ExampleTableViewController.h"
 #import "ExampleTableViewCell.h"
 #import "VForValidation.h"
+#import "VFRegularExpression.h"
 
 #define REUSE_IDENTIFIER @"cellIdentifier"
 
@@ -33,12 +34,13 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 5;
+    return 6;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     ExampleTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:REUSE_IDENTIFIER forIndexPath:indexPath];
+    cell.textField.placeholder = @"Input text";
     [self.v addValidation:[self validationForIndexPath:indexPath
                                                   cell:cell]];
 
@@ -55,7 +57,7 @@
     }];
 }
 
--(VFValidation *)validationForIndexPath:(NSIndexPath *)indexPath
+- (VFValidation *)validationForIndexPath:(NSIndexPath *)indexPath
                                  cell:(ExampleTableViewCell *)cell {
         
     __block ExampleTableViewCell *c = cell;
@@ -84,6 +86,13 @@
         case 4:
             validation = ^BOOL{
                 return c.textField.text.length == 1;
+            };
+            break;
+        case 5:
+            c.textField.placeholder = @"email with regex";
+            validation = ^BOOL{
+                VFRegularExpression *regex = [[VFRegularExpression alloc] initWithRegularExpression:@"^[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}$" stringToValidate:c.textField.text];
+                return [regex validate];
             };
             break;
         default:

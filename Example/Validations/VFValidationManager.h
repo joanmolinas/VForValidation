@@ -30,7 +30,7 @@
  
  */
 
--(instancetype)initWithValidations:(NSArray *)validations;
+- (instancetype)initWithValidations:(NSArray *)validations;
 
 /**
  Add one valiation to validations dictionary, validation contains our key.
@@ -39,7 +39,7 @@
  
  */
 
--(void)addValidation:(VFValidation *)validation;
+- (void)addValidation:(VFValidation *)validation;
 
 /**
  Add an validations array
@@ -48,7 +48,7 @@
  
  */
 
--(void)addValidations:(NSArray *)validations;
+- (void)addValidations:(NSArray *)validations;
 
 /**
  Update validation using the key
@@ -57,7 +57,7 @@
  
  */
 
--(void)updateValidation:(VFValidation *)validation;
+- (void)updateValidation:(VFValidation *)validation;
 
 /**
  Get validation by key
@@ -68,7 +68,7 @@
  
  */
 
--(VFValidation *)validationByKey:(NSString *)key;
+- (VFValidation *)validationByKey:(NSString *)key;
 
 /**
  Get all validations.
@@ -77,7 +77,7 @@
  
  */
 
--(NSArray *)validations;
+- (NSArray *)validations;
 
 /**
  Validate all the validations. Check and execute validation and validated for 
@@ -85,7 +85,7 @@
  
  */
 
--(void)validate;
+- (void)validate;
 
 /**
  Validate only one validation using his key.
@@ -94,7 +94,7 @@
  
  */
 
--(void)validateByKey:(NSString *)key;
+- (void)validateByKey:(NSString *)key;
 
 /**
  Check if all validation was valid. Manager iterates all the validations and will
@@ -106,7 +106,7 @@
  
  */
 
--(void)checkIfAllWasValidWithCompletion:(ValidatedWithoutKey)validated;
+- (void)checkIfAllWasValidWithCompletion:(ValidatedWithoutKey)validated;
 
 /**
   - Check and validate if all validation was valid. Manager iterates all the
@@ -119,6 +119,6 @@
  @param validated: return if all validations was true.
  
  */
--(void)validateAndCheckIfAllWasValidWithCompletion:(ValidatedWithoutKey)validated;
+- (void)validateAndCheckIfAllWasValidWithCompletion:(ValidatedWithoutKey)validated;
 
 @end
