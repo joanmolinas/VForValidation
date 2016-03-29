@@ -18,6 +18,7 @@ VFV have 2 parts:
 
   - *VFValidationManager.h*: Contains all validations and It's responsible to check and validate.
   - *VFValidation.h*: Check what needs validate and what happens when did it.
+  - *VFRegularExpression.h*: Create a regular expression and validate if string was valid.
   
 
 ## Installation
@@ -51,6 +52,19 @@ Drag and drop or copy Source Folder into your project.
   ```Objective-C
     VFValidation *validation = [[VFValidation alloc] initWithValidationBlock:^BOOL{
         return 1 != 2;
+    } validatedBlock:^(NSString *key, BOOL validated) {
+        if (validated) NSLog(@"True");
+        else NSLog(@"False");
+    } key:@"key"];
+    ```
+    or
+    
+    ```Objective-C
+    VFValidation *validation = [[VFValidation alloc] initWithValidationBlock:^BOOL{
+        VFRegularExpression *regex = [[VFRegularExpression alloc]   
+                initWithRegularExpression:@"^[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}$" 
+                        stringToValidate:@"joanmramon@gmail.com"];
+        return [regex validate];
     } validatedBlock:^(NSString *key, BOOL validated) {
         if (validated) NSLog(@"True");
         else NSLog(@"False");
@@ -110,11 +124,17 @@ Drag and drop or copy Source Folder into your project.
     -(void)checkValidationWithCompletion:(ValidatedWithouKey)validated;
     -(void)validateAndCheckWithCompletion:(ValidatedWithouKey)validated;
   ```
-
-## TO-DO:
-    - Execute validation blocs in a thread.
-    - Refactor names.
-
+  
+  - *VFRegularExpression.h*
+  ```Objective-C
+    ///Constructors
+    - (instancetype)initWithRegularExpression:(NSString *)regex
+                         stringToValidate:(NSString *)stringToValidate;
+                         
+    ///Public API
+    - (BOOL)validate;
+  ```
+ 
 ## Contributing
 
 1. Fork it!
