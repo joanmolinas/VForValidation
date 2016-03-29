@@ -89,7 +89,7 @@
             };
             break;
         case 5:
-            c.textField.placeholder = @"email with regex";
+            c.textField.placeholder = @"email";
             validation = ^BOOL{
                 VFRegularExpression *regex = [[VFRegularExpression alloc] initWithRegularExpression:@"^[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}$" stringToValidate:c.textField.text];
                 return [regex validate];
