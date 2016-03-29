@@ -21,7 +21,7 @@
 
 #pragma mark - Init
 
--(instancetype)init {
+- (instancetype)init {
     self = [super init];
     if(self) {
         [self _setupMapTables];
@@ -30,7 +30,7 @@
     return self;
 }
 
--(instancetype)initWithValidations:(NSArray *)validations {
+- (instancetype)initWithValidations:(NSArray *)validations {
     self = [super init];
     if (self) {
         [self addValidations:validations];
@@ -40,13 +40,13 @@
 }
 
 #pragma mark - Add Validations
--(void)addValidation:(VFValidation *)validation {
+- (void)addValidation:(VFValidation *)validation {
     if (!validation.key || !validation ) { [[self class] missingParameters]; }
     
     [_validations setObject:validation forKey:validation.key];
 }
 
--(void)addValidations:(NSArray *)validations {
+- (void)addValidations:(NSArray *)validations {
     if (validations.count < 1) { return; }
     for (VFValidation *v in validations) {
         [self addValidation:v];
@@ -55,20 +55,20 @@
 
 #pragma mark - Validates
 
--(void)validate {
+- (void)validate {
     for (NSString *key in [[_validations keyEnumerator] allObjects]) {
         [self validateByKey:key];
     }
 }
 
--(void)validateByKey:(NSString *)key {
+- (void)validateByKey:(NSString *)key {
     if (!key) { [[self class] missingParameters]; }
     VFValidation *v = [_validations objectForKey:key];
     [v validate];
     
 }
 
--(void)checkIfAllWasValidWithCompletionBlock:(ValidatedWithouKey)validated {
+- (void)checkIfAllWasValidWithCompletion:(ValidatedWithoutKey)validated {
     __block BOOL allWasValid = true;
     int i = 0;
     NSArray *keys = [[_validations keyEnumerator] allObjects];
@@ -84,31 +84,31 @@
     validated(allWasValid);
 }
 
--(void)validateAndCheckIfAllWasValidWithCompletionBlock:(ValidatedWithouKey)validated {
+- (void)validateAndCheckIfAllWasValidWithCompletion:(ValidatedWithoutKey)validated {
     [self validate];
-    [self checkIfAllWasValidWithCompletionBlock:validated];
+    [self checkIfAllWasValidWithCompletion:validated];
 }
 
 #pragma mark - Getters
 
--(VFValidation *)validationByKey:(NSString *)key {
+- (VFValidation *)validationByKey:(NSString *)key {
     if (!key) { [[self class] missingParameters]; }
     return [_validations objectForKey:key];
 }
 
--(NSArray *)validations {
+- (NSArray *)validations {
     return [[_validations objectEnumerator] allObjects];
 }
 
 #pragma mark - Updates
 
--(void)updateValidation:(VFValidation *)validation {
+- (void)updateValidation:(VFValidation *)validation {
     [self addValidation:validation];
 }
 
 #pragma mark - Private API
 
--(void)_setupMapTables {
+- (void)_setupMapTables {
     _validations = [NSMapTable
                     mapTableWithKeyOptions:NSMapTableWeakMemory
                     valueOptions:NSMapTableStrongMemory];
