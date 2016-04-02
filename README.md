@@ -26,11 +26,10 @@ VFV have 2 parts:
 ### Manual
 Drag and drop or copy Source Folder into your project.
 
-## Pod
-*Soon*
-
-##Carthage 
-*Soon*
+##Pod 
+```
+pod 'VForValidation'
+```
 
 ##Getting started
   
