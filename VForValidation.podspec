@@ -10,8 +10,8 @@ s.social_media_url      = 'https://twitter.com/joanmolinas'
 s.platform              = :ios, '8.0'
 s.ios.deployment_target = '8.0'
 
-s.source                = { :git => "https://github.com/DavdRoman/Popsicle.git", :tag => s.version.to_s }
-s.source_files          = 'Popsicle/*.{h,swift}'
+s.source                = { :git => "https://github.com/ulidev/VForValidation.git", :tag => s.version.to_s }
+s.source_files          = 'Source/*.{h,m}'
 s.frameworks            = 'UIKit'
 s.requires_arc          = true
 end
