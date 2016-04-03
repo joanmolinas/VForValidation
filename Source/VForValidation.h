@@ -12,3 +12,4 @@
 #import <Foundation/Foundation.h>
 #import "VFValidationManager.h"
 #import "VFValidation.h"
+#import "VFRegularExpression.h"
