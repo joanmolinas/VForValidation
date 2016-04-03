@@ -14,9 +14,9 @@
 		4E70D4DC1C7DB78800991424 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E70D4DA1C7DB78800991424 /* LaunchScreen.storyboard */; };
 		4E70D4EC1C7DDC8A00991424 /* ExampleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E70D4EB1C7DDC8A00991424 /* ExampleTableViewController.m */; };
 		4E70D4F01C7DDD8000991424 /* ExampleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E70D4EF1C7DDD8000991424 /* ExampleTableViewCell.m */; };
-		4EACBDA81CB1403A00447361 /* VFRegularExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EACBDA31CB1403A00447361 /* VFRegularExpression.m */; };
-		4EACBDA91CB1403A00447361 /* VFValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EACBDA51CB1403A00447361 /* VFValidation.m */; };
-		4EACBDAA1CB1403A00447361 /* VFValidationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EACBDA71CB1403A00447361 /* VFValidationManager.m */; };
+		4EACBDB21CB1421800447361 /* VFRegularExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EACBDAD1CB1421800447361 /* VFRegularExpression.m */; };
+		4EACBDB31CB1421800447361 /* VFValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EACBDAF1CB1421800447361 /* VFValidation.m */; };
+		4EACBDB41CB1421800447361 /* VFValidationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EACBDB11CB1421800447361 /* VFValidationManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,13 +32,13 @@
 		4E70D4EB1C7DDC8A00991424 /* ExampleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExampleTableViewController.m; path = Validations/Example/ExampleTableViewController.m; sourceTree = "<group>"; };
 		4E70D4EE1C7DDD8000991424 /* ExampleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExampleTableViewCell.h; path = Validations/Example/ExampleTableViewCell.h; sourceTree = "<group>"; };
 		4E70D4EF1C7DDD8000991424 /* ExampleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExampleTableViewCell.m; path = Validations/Example/ExampleTableViewCell.m; sourceTree = "<group>"; };
-		4EACBDA11CB1403A00447361 /* VForValidation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VForValidation.h; sourceTree = "<group>"; };
-		4EACBDA21CB1403A00447361 /* VFRegularExpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VFRegularExpression.h; sourceTree = "<group>"; };
-		4EACBDA31CB1403A00447361 /* VFRegularExpression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VFRegularExpression.m; sourceTree = "<group>"; };
-		4EACBDA41CB1403A00447361 /* VFValidation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VFValidation.h; sourceTree = "<group>"; };
-		4EACBDA51CB1403A00447361 /* VFValidation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VFValidation.m; sourceTree = "<group>"; };
-		4EACBDA61CB1403A00447361 /* VFValidationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VFValidationManager.h; sourceTree = "<group>"; };
-		4EACBDA71CB1403A00447361 /* VFValidationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VFValidationManager.m; sourceTree = "<group>"; };
+		4EACBDAB1CB1421800447361 /* VForValidation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VForValidation.h; path = ../../Source/VForValidation.h; sourceTree = "<group>"; };
+		4EACBDAC1CB1421800447361 /* VFRegularExpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VFRegularExpression.h; path = ../../Source/VFRegularExpression.h; sourceTree = "<group>"; };
+		4EACBDAD1CB1421800447361 /* VFRegularExpression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VFRegularExpression.m; path = ../../Source/VFRegularExpression.m; sourceTree = "<group>"; };
+		4EACBDAE1CB1421800447361 /* VFValidation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VFValidation.h; path = ../../Source/VFValidation.h; sourceTree = "<group>"; };
+		4EACBDAF1CB1421800447361 /* VFValidation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VFValidation.m; path = ../../Source/VFValidation.m; sourceTree = "<group>"; };
+		4EACBDB01CB1421800447361 /* VFValidationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VFValidationManager.h; path = ../../Source/VFValidationManager.h; sourceTree = "<group>"; };
+		4EACBDB11CB1421800447361 /* VFValidationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VFValidationManager.m; path = ../../Source/VFValidationManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,13 +107,13 @@
 		4EACBDA01CB1403A00447361 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				4EACBDA11CB1403A00447361 /* VForValidation.h */,
-				4EACBDA21CB1403A00447361 /* VFRegularExpression.h */,
-				4EACBDA31CB1403A00447361 /* VFRegularExpression.m */,
-				4EACBDA41CB1403A00447361 /* VFValidation.h */,
-				4EACBDA51CB1403A00447361 /* VFValidation.m */,
-				4EACBDA61CB1403A00447361 /* VFValidationManager.h */,
-				4EACBDA71CB1403A00447361 /* VFValidationManager.m */,
+				4EACBDAB1CB1421800447361 /* VForValidation.h */,
+				4EACBDAC1CB1421800447361 /* VFRegularExpression.h */,
+				4EACBDAD1CB1421800447361 /* VFRegularExpression.m */,
+				4EACBDAE1CB1421800447361 /* VFValidation.h */,
+				4EACBDAF1CB1421800447361 /* VFValidation.m */,
+				4EACBDB01CB1421800447361 /* VFValidationManager.h */,
+				4EACBDB11CB1421800447361 /* VFValidationManager.m */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -190,10 +190,10 @@
 			files = (
 				4E70D4F01C7DDD8000991424 /* ExampleTableViewCell.m in Sources */,
 				4E70D4D11C7DB78800991424 /* AppDelegate.m in Sources */,
-				4EACBDAA1CB1403A00447361 /* VFValidationManager.m in Sources */,
-				4EACBDA81CB1403A00447361 /* VFRegularExpression.m in Sources */,
+				4EACBDB41CB1421800447361 /* VFValidationManager.m in Sources */,
+				4EACBDB21CB1421800447361 /* VFRegularExpression.m in Sources */,
 				4E70D4EC1C7DDC8A00991424 /* ExampleTableViewController.m in Sources */,
-				4EACBDA91CB1403A00447361 /* VFValidation.m in Sources */,
+				4EACBDB31CB1421800447361 /* VFValidation.m in Sources */,
 				4E70D4CE1C7DB78800991424 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
