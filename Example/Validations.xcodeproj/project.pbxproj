@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4E574F2D1CAB17A700502701 /* VFRegularExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E574F281CAB17A700502701 /* VFRegularExpression.m */; };
-		4E574F2E1CAB17A700502701 /* VFValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E574F2A1CAB17A700502701 /* VFValidation.m */; };
-		4E574F2F1CAB17A700502701 /* VFValidationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E574F2C1CAB17A700502701 /* VFValidationManager.m */; };
 		4E70D4CE1C7DB78800991424 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E70D4CD1C7DB78800991424 /* main.m */; };
 		4E70D4D11C7DB78800991424 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E70D4D01C7DB78800991424 /* AppDelegate.m */; };
 		4E70D4D71C7DB78800991424 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E70D4D51C7DB78800991424 /* Main.storyboard */; };
@@ -17,16 +14,12 @@
 		4E70D4DC1C7DB78800991424 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E70D4DA1C7DB78800991424 /* LaunchScreen.storyboard */; };
 		4E70D4EC1C7DDC8A00991424 /* ExampleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E70D4EB1C7DDC8A00991424 /* ExampleTableViewController.m */; };
 		4E70D4F01C7DDD8000991424 /* ExampleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E70D4EF1C7DDD8000991424 /* ExampleTableViewCell.m */; };
+		4EACBDA81CB1403A00447361 /* VFRegularExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EACBDA31CB1403A00447361 /* VFRegularExpression.m */; };
+		4EACBDA91CB1403A00447361 /* VFValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EACBDA51CB1403A00447361 /* VFValidation.m */; };
+		4EACBDAA1CB1403A00447361 /* VFValidationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EACBDA71CB1403A00447361 /* VFValidationManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4E574F261CAB17A700502701 /* VForValidation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VForValidation.h; sourceTree = "<group>"; };
-		4E574F271CAB17A700502701 /* VFRegularExpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VFRegularExpression.h; sourceTree = "<group>"; };
-		4E574F281CAB17A700502701 /* VFRegularExpression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VFRegularExpression.m; sourceTree = "<group>"; };
-		4E574F291CAB17A700502701 /* VFValidation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VFValidation.h; sourceTree = "<group>"; };
-		4E574F2A1CAB17A700502701 /* VFValidation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VFValidation.m; sourceTree = "<group>"; };
-		4E574F2B1CAB17A700502701 /* VFValidationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VFValidationManager.h; sourceTree = "<group>"; };
-		4E574F2C1CAB17A700502701 /* VFValidationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VFValidationManager.m; sourceTree = "<group>"; };
 		4E70D4C91C7DB78800991424 /* Validations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Validations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E70D4CD1C7DB78800991424 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4E70D4CF1C7DB78800991424 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -39,6 +32,13 @@
 		4E70D4EB1C7DDC8A00991424 /* ExampleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExampleTableViewController.m; path = Validations/Example/ExampleTableViewController.m; sourceTree = "<group>"; };
 		4E70D4EE1C7DDD8000991424 /* ExampleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExampleTableViewCell.h; path = Validations/Example/ExampleTableViewCell.h; sourceTree = "<group>"; };
 		4E70D4EF1C7DDD8000991424 /* ExampleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExampleTableViewCell.m; path = Validations/Example/ExampleTableViewCell.m; sourceTree = "<group>"; };
+		4EACBDA11CB1403A00447361 /* VForValidation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VForValidation.h; sourceTree = "<group>"; };
+		4EACBDA21CB1403A00447361 /* VFRegularExpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VFRegularExpression.h; sourceTree = "<group>"; };
+		4EACBDA31CB1403A00447361 /* VFRegularExpression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VFRegularExpression.m; sourceTree = "<group>"; };
+		4EACBDA41CB1403A00447361 /* VFValidation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VFValidation.h; sourceTree = "<group>"; };
+		4EACBDA51CB1403A00447361 /* VFValidation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VFValidation.m; sourceTree = "<group>"; };
+		4EACBDA61CB1403A00447361 /* VFValidationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VFValidationManager.h; sourceTree = "<group>"; };
+		4EACBDA71CB1403A00447361 /* VFValidationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VFValidationManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +55,7 @@
 		4E70D4C01C7DB78800991424 = {
 			isa = PBXGroup;
 			children = (
+				4EACBDA01CB1403A00447361 /* Source */,
 				4E70D4CB1C7DB78800991424 /* Validations */,
 				4E70D4CA1C7DB78800991424 /* Products */,
 			);
@@ -72,7 +73,6 @@
 			isa = PBXGroup;
 			children = (
 				4E70D4ED1C7DDC9100991424 /* Example */,
-				4E70D4E31C7DB7AF00991424 /* Source */,
 				4E70D4CF1C7DB78800991424 /* AppDelegate.h */,
 				4E70D4D01C7DB78800991424 /* AppDelegate.m */,
 				4E70D4D51C7DB78800991424 /* Main.storyboard */,
@@ -92,20 +92,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		4E70D4E31C7DB7AF00991424 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				4E574F261CAB17A700502701 /* VForValidation.h */,
-				4E574F271CAB17A700502701 /* VFRegularExpression.h */,
-				4E574F281CAB17A700502701 /* VFRegularExpression.m */,
-				4E574F291CAB17A700502701 /* VFValidation.h */,
-				4E574F2A1CAB17A700502701 /* VFValidation.m */,
-				4E574F2B1CAB17A700502701 /* VFValidationManager.h */,
-				4E574F2C1CAB17A700502701 /* VFValidationManager.m */,
-			);
-			name = Source;
-			sourceTree = "<group>";
-		};
 		4E70D4ED1C7DDC9100991424 /* Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +102,20 @@
 			);
 			name = Example;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		4EACBDA01CB1403A00447361 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				4EACBDA11CB1403A00447361 /* VForValidation.h */,
+				4EACBDA21CB1403A00447361 /* VFRegularExpression.h */,
+				4EACBDA31CB1403A00447361 /* VFRegularExpression.m */,
+				4EACBDA41CB1403A00447361 /* VFValidation.h */,
+				4EACBDA51CB1403A00447361 /* VFValidation.m */,
+				4EACBDA61CB1403A00447361 /* VFValidationManager.h */,
+				4EACBDA71CB1403A00447361 /* VFValidationManager.m */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,10 +190,10 @@
 			files = (
 				4E70D4F01C7DDD8000991424 /* ExampleTableViewCell.m in Sources */,
 				4E70D4D11C7DB78800991424 /* AppDelegate.m in Sources */,
-				4E574F2F1CAB17A700502701 /* VFValidationManager.m in Sources */,
-				4E574F2D1CAB17A700502701 /* VFRegularExpression.m in Sources */,
+				4EACBDAA1CB1403A00447361 /* VFValidationManager.m in Sources */,
+				4EACBDA81CB1403A00447361 /* VFRegularExpression.m in Sources */,
 				4E70D4EC1C7DDC8A00991424 /* ExampleTableViewController.m in Sources */,
-				4E574F2E1CAB17A700502701 /* VFValidation.m in Sources */,
+				4EACBDA91CB1403A00447361 /* VFValidation.m in Sources */,
 				4E70D4CE1C7DB78800991424 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
