@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name                  = "VForValidation"
-s.version               = "1.0.0"
+s.version               = "1.0.2"
 s.summary               = "VFV it's an easy way for check expressions"
 s.homepage              = "https://github.com/ulidev/VForValidation/"
 s.author                = { "Joan Molinas" => "joanmramon@gmail.com" }
