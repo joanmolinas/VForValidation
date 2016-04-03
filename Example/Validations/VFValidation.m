@@ -62,11 +62,14 @@
 
 #pragma mark - Public API
 - (void)validate {
+    if (!_validatedBlock) return;
+    
     __unsafe_unretained typeof(self) weakSelf = self;
     _validatedBlock(weakSelf.key, _validationBlock());
 }
 
 - (void)checkValidationWithCompletion:(ValidatedWithoutKey)validated {
+    if (!_validatedBlock) return;
     validated(_validationBlock());
 }
 
